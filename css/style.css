@@ -40,7 +40,6 @@ header h1 {
 }
 
 
-/* CABEÇALHO */
 
 .cabecalho {
     background-color: #0B1020;
@@ -53,7 +52,6 @@ header h1 {
     border-bottom: 1px solid #27334A;
 }
 
-/* LOGO */
 
 .logo {
     color: #F1F5F9;
@@ -66,7 +64,6 @@ header h1 {
     color: #39F5A5;
 }
 
-/* MENU */
 
 .menu {
     display: flex;
@@ -83,4 +80,138 @@ header h1 {
 
 .menu a:hover {
     color: #39F5A5;
+}
+
+
+/*
+   BANNER PRINCIPAL
+*/
+
+.banner {
+    background-color: #0B1020;
+
+    min-height: 450px;
+    padding: 70px 8%;
+
+    display: flex;
+    align-items: center;
+}
+
+.banner-conteudo {
+    max-width: 600px;
+}
+
+.etiqueta {
+    color: #39F5A5;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.banner h1 {
+    color: #F1F5F9;
+    font-size: 46px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.banner p {
+    color: #8995A8;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.botao {
+    display: inline-block;
+
+    background-color: #39F5A5;
+    color: #0B1020;
+
+    padding: 12px 22px;
+    border-radius: 6px;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #D6B56D;
+    transform: translateY(-3px);
+}
+
+
+/* ILUSTRAÇÃO DO BANNER */
+
+.banner-visual {
+    flex: 1;
+    min-height: 350px;
+
+    background-color: #151E32;
+    border: 1px solid #27334A;
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.portal {
+    width: 210px;
+    height: 210px;
+
+    border: 2px solid #39F5A5;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 0 25px rgba(57, 245, 165, 0.3);
+    animation: pulsar 3s ease-in-out infinite;
+}
+
+.portal-centro {
+    width: 145px;
+    height: 145px;
+
+    border: 1px solid #D6B56D;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portal-centro span {
+    color: #39F5A5;
+    font-size: 55px;
+}
+
+.texto-visual {
+    position: absolute;
+    bottom: 20px;
+
+    color: #F1F5F9;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+/* ANIMAÇÃO DO PORTAL */
+
+@keyframes pulsar {
+
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 25px rgba(57, 245, 165, 0.3);
+    }
+
+    50% {
+        transform: scale(1.04);
+        box-shadow: 0 0 40px rgba(57, 245, 165, 0.55);
+    }
+
 }
