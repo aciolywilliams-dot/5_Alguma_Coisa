@@ -38,3 +38,49 @@ header h1 {
     color: var(--cor-destaque);
     margin-bottom: 10px;
 }
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background-color: #0B1020;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+    border-bottom: 1px solid #27334A;
+}
+
+/* LOGO */
+
+.logo {
+    color: #F1F5F9;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #39F5A5;
+}
+
+/* MENU */
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: #8995A8;
+    text-decoration: none;
+    font-size: 14px;
+
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #39F5A5;
+}
