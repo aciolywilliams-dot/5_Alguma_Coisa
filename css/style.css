@@ -1,0 +1,40 @@
+/*
+   1. VARIÁVEIS GLOBAIS
+*/
+
+:root {
+    --cor-principal: #101A30;
+    --cor-destaque: #D6B56D;
+    --cor-secundaria: #477A56;
+    --cor-fundo: #F4F5F2;
+    --cor-texto: #252B35;
+    --cor-borda: #DCE1E5;
+}
+
+/*
+   2. CONFIGURAÇÕES GERAIS
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--cor-destaque);
+    margin-bottom: 10px;
+}
