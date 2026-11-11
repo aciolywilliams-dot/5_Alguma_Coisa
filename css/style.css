@@ -215,3 +215,215 @@ header h1 {
     }
 
 }
+
+
+/* 
+   SEÇÃO DE CURIOSIDADES
+ */
+
+.curiosidades {
+    background-color: #0B1020;
+    padding: 70px 8%;
+}
+
+.secao-titulo {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.secao-titulo h2 {
+    color: #F1F5F9;
+    font-size: 32px;
+    margin: 12px 0;
+}
+
+.secao-titulo p {
+    color: #8995A8;
+    font-size: 15px;
+}
+
+
+/*
+   CARDS DOS JOGOS
+*/
+
+.lista-jogos {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+    align-items: start;
+}
+
+/* CARD INDIVIDUAL */
+
+.card-jogo {
+    background-color: #151E32;
+
+    border: 1px solid #27334A;
+    border-radius: 12px;
+
+    padding: 25px;
+
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.card-jogo:hover {
+    transform: translateY(-5px);
+    border-color: #39F5A5;
+}
+
+.card-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.categoria {
+    color: #39F5A5;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.card-jogo h3 {
+    color: #F1F5F9;
+    font-size: 21px;
+    margin: 12px 0;
+}
+
+.card-jogo p {
+    color: #8995A8;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.card-jogo a {
+    color: #39F5A5;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: color 0.3s;
+}
+
+.card-jogo a:hover {
+    color: #D6B56D;
+}
+
+/* CENTRALIZAR O ÚLTIMO CARD */
+
+.card-jogo:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    width: calc(50% - 12.5px);
+    justify-self: center;
+}
+
+
+/* IMAGEM DOS CARDS */
+
+.imagem-card {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.imagem-jogo {
+    display: block;
+    width: 100%;
+    height: 180px;
+
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* CRÉDITOS DA IMAGEM */
+
+.imagem-card figcaption {
+    color: #8995A8;
+    font-size: 11px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.imagem-card figcaption a {
+    color: #39F5A5;
+    text-decoration: none;
+}
+
+.imagem-card figcaption a:hover {
+    text-decoration: underline;
+}
+
+
+/* 
+   RESPONSIVIDADE
+ */
+
+@media (max-width: 768px) {
+
+    .banner {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 35px;
+        min-height: auto;
+        padding: 55px 6%;
+    }
+
+    .banner-conteudo {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 34px;
+    }
+
+    .banner-visual {
+        flex: none;
+        width: 100%;
+        min-height: 280px;
+        box-sizing: border-box;
+    }
+
+    .portal {
+        width: 170px;
+        height: 170px;
+    }
+
+    .texto-visual {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    
+    .lista-jogos {
+        grid-template-columns: 1fr;
+    }
+
+    .card-jogo:last-child:nth-child(odd) {
+        grid-column: auto;
+        width: 100%;
+    }
+
+        /* CABEÇALHO PARA CELULARES */
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 18px;
+        padding: 18px 6%;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+}
