@@ -522,3 +522,65 @@ header h1 {
     color: #8995A8;
     font-size: 12px;
 }
+
+/* PAGINAÇÃO */
+
+.pagination {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0B1020;
+    height: 50px;
+    padding: 0 20px;
+}
+
+.pagination .page {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #27334A;
+    border: 1px solid #000;
+    margin: 0 5px;
+    color: rgb(244, 244, 244);
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.pagination .page:hover {
+    filter: brightness(.8);
+    background-color: #39F5A5;
+    color: white;
+}
+
+.pagination .page.active {
+    background-color: #39F5A5;
+    color: aliceblue;
+}
+
+.pagination .control {
+    color: #f5f5f5;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.pagination .control:hover {
+    color: #39F5A5;
+}
+
+.pagination .control.prev {
+    margin-right: 10px;
+}
+
+.pagination .control.next {
+    margin-left: 10px;
+}
+
+.secao-paginacao {
+    display: none;
+}
