@@ -1,0 +1,272 @@
+
+/* =================================
+   ESTILIZAÇÃO DA PÁGINA ZELDA
+================================= */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+.zelda-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 22px 8%;
+
+    background-color: #0B1020;
+    border-bottom: 1px solid #27334A;
+}
+
+.zelda-logo {
+    color: #F1F5F9;
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.zelda-logo span,
+.rodape span {
+    color: #39F5A5;
+}
+
+.zelda-nav {
+    display: flex;
+    gap: 22px;
+}
+
+.zelda-nav a {
+    color: #8995A8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.zelda-nav a:hover {
+    color: #39F5A5;
+}
+
+
+/* BANNER */
+
+.zelda-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+
+    padding: 100px 8%;
+    background-color: #0B1020;
+}
+
+.zelda-hero-conteudo h1 {
+    color: #F1F5F9;
+    font-size: 46px;
+    margin: 20px 0;
+}
+
+.zelda-hero-conteudo h1 span {
+    display: block;
+    color: #39F5A5;
+}
+
+.zelda-hero-conteudo p {
+    color: #8995A8;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.zelda-etiqueta {
+    color: #39F5A5;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.zelda-hero-imagem img {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.zelda-botao {
+    display: inline-block;
+    padding: 14px 22px;
+
+    background-color: #39F5A5;
+    color: #0B1020;
+
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.zelda-botao:hover {
+    transform: translateY(-3px);
+}
+
+
+/* SEÇÕES */
+
+.zelda-secao {
+    padding: 85px 8%;
+    background-color: #0B1020;
+}
+
+.zelda-titulo-secao {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.zelda-titulo-secao h2 {
+    color: #F1F5F9;
+    font-size: 36px;
+    margin: 18px 0;
+}
+
+.zelda-titulo-secao p,
+.zelda-texto p {
+    color: #8995A8;
+    line-height: 1.8;
+}
+
+.zelda-texto {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* FICHA TÉCNICA */
+
+.zelda-ficha {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.zelda-ficha-item {
+    padding: 25px;
+    background-color: #161F33;
+    border: 1px solid #27334A;
+    border-radius: 10px;
+}
+
+.zelda-ficha-item span,
+.zelda-ficha-item strong {
+    display: block;
+}
+
+.zelda-ficha-item span {
+    color: #8995A8;
+    margin-bottom: 12px;
+}
+
+.zelda-ficha-item strong {
+    color: #39F5A5;
+}
+
+
+/* VERSÕES */
+
+.zelda-versoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.zelda-versao-card {
+    overflow: hidden;
+    background-color: #161F33;
+    border: 1px solid #27334A;
+    border-radius: 12px;
+}
+
+
+.zelda-versao-imagem {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: #0B1020;
+}
+
+.zelda-versao-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+.zelda-versao-card:hover .zelda-versao-imagem img {
+    transform: scale(1.04);
+}
+
+
+.zelda-versao-conteudo {
+    padding: 25px;
+}
+
+.zelda-versao-conteudo h3 {
+    color: #F1F5F9;
+    margin: 15px 0;
+}
+
+.zelda-versao-conteudo p {
+    color: #8995A8;
+    line-height: 1.7;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    .zelda-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .zelda-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .zelda-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .zelda-ficha {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .zelda-hero-conteudo h1 {
+        font-size: 32px;
+    }
+
+    .zelda-ficha,
+    .zelda-versoes {
+        grid-template-columns: 1fr;
+    }
+
+    .zelda-secao {
+        padding: 60px 6%;
+    }
+
+    .zelda-nav {
+        gap: 12px;
+    }
+
+}
