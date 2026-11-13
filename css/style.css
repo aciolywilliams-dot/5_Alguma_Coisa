@@ -584,3 +584,24 @@ header h1 {
 .secao-paginacao {
     display: none;
 }
+
+.rodape-marca h2 {
+    color: #F1F5F9;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.rodape-marca h2 span {
+    color: #39F5A5;
+}
+
+@media (max-width: 600px) {
+    .rodape-conteudo {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .rodape-final {
+        flex-direction: column;
+    }
+}

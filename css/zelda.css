@@ -270,3 +270,322 @@ html {
     }
 
 }
+
+
+/*
+   PERSONAGENS
+ */
+
+.zelda-personagens {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.zelda-personagem-card {
+    overflow: hidden;
+    background-color: #161F33;
+    border: 1px solid #27334A;
+    border-radius: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.zelda-personagem-card:hover {
+    transform: translateY(-6px);
+    border-color: #39F5A5;
+}
+
+.zelda-personagem-imagem {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    background-color: #0B1020;
+}
+
+.zelda-personagem-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.zelda-personagem-card:hover .zelda-personagem-imagem img {
+    transform: scale(1.05);
+}
+
+.zelda-personagem-conteudo {
+    padding: 22px;
+}
+
+.zelda-personagem-conteudo h3 {
+    color: #39F5A5;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.zelda-personagem-conteudo p {
+    color: #8995A8;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* RESPONSIVIDADE DOS PERSONAGENS */
+
+@media (max-width: 900px) {
+    .zelda-personagens {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .zelda-personagens {
+        grid-template-columns: 1fr;
+    }
+
+    .zelda-personagem-imagem {
+        aspect-ratio: 16 / 9;
+    }
+}
+
+
+/* REGIÕES DE HYRULE */
+
+.zelda-regioes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.zelda-regiao-card {
+    background-color: #161F33;
+    border: 1px solid #27334A;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.zelda-regiao-card:hover {
+    transform: translateY(-6px);
+    border-color: #39F5A5;
+}
+
+.zelda-regiao-card h3 {
+    color: #39F5A5;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.zelda-regiao-card p {
+    color: #8995A8;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+    .zelda-regioes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .zelda-regioes {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* REGIÕES DE HYRULE */
+
+.zelda-regioes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.zelda-regiao-card {
+    background-color: #161F33;
+    border: 1px solid #27334A;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.zelda-regiao-card:hover {
+    transform: translateY(-6px);
+    border-color: #39F5A5;
+}
+
+.zelda-regiao-card h3 {
+    color: #39F5A5;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.zelda-regiao-card p {
+    color: #8995A8;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+    .zelda-regioes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .zelda-regioes {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* AJUSTES DO RODAPÉ DA PÁGINA ZELDA */
+
+.rodape {
+    background-color: #0B1020;
+    border-top: 1px solid #27334A;
+}
+
+.rodape-conteudo h2,
+.rodape-conteudo h3 {
+    color: #F1F5F9;
+}
+
+.rodape-conteudo p {
+    color: #8995A8;
+    line-height: 1.6;
+}
+
+.rodape-conteudo a {
+    display: inline-block;
+    color: #8995A8;
+    text-decoration: none;
+    margin-right: 14px;
+    transition: color 0.3s ease;
+}
+
+.rodape-conteudo a:hover {
+    color: #39F5A5;
+}
+
+.rodape-final {
+    color: #8995A8;
+    border-top: 1px solid #27334A;
+}
+
+
+
+/* CURIOSIDADES */
+
+.zelda-curiosidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.zelda-curiosidade-card {
+    position: relative;
+    background-color: #161F33;
+    border: 1px solid #27334A;
+    border-radius: 12px;
+    padding: 28px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.zelda-curiosidade-card:hover {
+    transform: translateY(-6px);
+    border-color: #39F5A5;
+}
+
+.zelda-curiosidade-numero {
+    display: block;
+    color: #39F5A5;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.zelda-curiosidade-card h3 {
+    color: #F1F5F9;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.zelda-curiosidade-card p {
+    color: #8995A8;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+    .zelda-curiosidades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .zelda-curiosidades {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* REFERÊNCIAS */
+
+.zelda-referencias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.zelda-referencia-card {
+    background-color: #161F33;
+    border: 1px solid #27334A;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.zelda-referencia-card:hover {
+    transform: translateY(-5px);
+    border-color: #39F5A5;
+}
+
+.zelda-referencia-card h3 {
+    color: #39F5A5;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.zelda-referencia-card p {
+    color: #8995A8;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.zelda-referencia-card a {
+    color: #39F5A5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.zelda-referencia-card a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .zelda-referencias {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -17,6 +16,7 @@
 
 <body>
 
+
     <!-- CABEÇALHO -->
     <header class="minecraft-header">
 
@@ -32,6 +32,8 @@
             <a href="#personagens">Personagens</a>
             <a href="#mundo">Mundo</a>
             <a href="#curiosidades">Curiosidades</a>
+            <a href="#legado">Legado</a>
+            <a href="#referencias">Referências</a>
         </nav>
 
     </header>
@@ -67,10 +69,7 @@
 
             <div class="minecraft-hero-imagem">
 
-                <img
-                    src="../assets/images/minecraft-capa.jpeg"
-                    alt="Imagem de divulgação de Minecraft"
-                >
+                <img src="../assets/images/minecraft-capa.jpeg" alt="Imagem de divulgação de Minecraft">
 
             </div>
 
@@ -169,11 +168,7 @@
 
                     <div class="minecraft-versao-imagem">
 
-                        <img
-                            src="../assets/images/minecraft_java.jpg"
-                            alt="Minecraft Java Edition"
-                            loading="lazy"
-                        >
+                        <img src="../assets/images/minecraft_java.jpg" alt="Minecraft Java Edition" loading="lazy">
 
                     </div>
 
@@ -198,11 +193,8 @@
 
                     <div class="minecraft-versao-imagem">
 
-                        <img
-                            src="../assets/images/minecraft_badrock_edition.jpg"
-                            alt="Minecraft Bedrock Edition"
-                            loading="lazy"
-                        >
+                        <img src="../assets/images/minecraft_badrock_edition.jpg" alt="Minecraft Bedrock Edition"
+                            loading="lazy">
 
                     </div>
 
@@ -269,6 +261,7 @@
         </section>
 
 
+
         <!-- PERSONAGENS E CRIATURAS -->
         <section class="minecraft-secao" id="personagens">
 
@@ -279,30 +272,62 @@
                 <h2>Personagens e criaturas</h2>
 
                 <p>
-                    Conheça alguns dos seres encontrados durante as aventuras.
+                    Conheça alguns dos personagens e seres encontrados
+                    durante as aventuras em Minecraft.
                 </p>
 
             </div>
 
-            <div class="minecraft-texto">
+            <div class="minecraft-personagens">
 
-                <p>
-                    O mundo de Minecraft é habitado por diferentes criaturas,
-                    conhecidas como mobs. Algumas são pacíficas, enquanto outras
-                    representam desafios durante a exploração.
-                </p>
+                <!-- STEVE E ALEX -->
+                <article class="minecraft-personagem-card">
 
-                <p>
-                    Entre os personagens mais conhecidos estão Steve e Alex,
-                    além de criaturas como Creeper, Zumbi, Esqueleto e Enderman.
-                </p>
+                    <div class="minecraft-personagem-imagem">
+                        <img src="../assets/images/minecraft/steve-alex.jpg"
+                            alt="Steve e Alex, personagens de Minecraft" loading="lazy">
+                    </div>
+
+                    <div class="minecraft-personagem-conteudo">
+                        <h3>Steve e Alex</h3>
+                        <p>
+                            Steve e Alex são personagens clássicos de Minecraft.
+                            Representam os jogadores em suas aventuras pelo mundo,
+                            explorando ambientes, coletando recursos e construindo
+                            diferentes estruturas.
+                        </p>
+                    </div>
+
+                </article>
+
+                <!-- CRIATURAS -->
+                <article class="minecraft-personagem-card">
+
+                    <div class="minecraft-personagem-imagem">
+                        <img src="../assets/images/minecraft/criaturas.jpg"
+                            alt="Criaturas encontradas no universo de Minecraft" loading="lazy">
+                    </div>
+
+                    <div class="minecraft-personagem-conteudo">
+                        <h3>Criaturas do Minecraft</h3>
+                        <p>
+                            O mundo é habitado por diferentes criaturas,
+                            conhecidas como mobs. Entre as mais conhecidas
+                            estão o Creeper, o Zumbi, o Esqueleto e o Enderman,
+                            cada uma com características e comportamentos próprios.
+                        </p>
+                    </div>
+
+                </article>
 
             </div>
 
         </section>
 
 
-        <!-- MUNDO -->
+
+
+        <!-- MUNDO E DIMENSÕES -->
         <section class="minecraft-secao" id="mundo">
 
             <div class="minecraft-titulo-secao">
@@ -312,27 +337,81 @@
                 <h2>Um mundo de possibilidades</h2>
 
                 <p>
-                    Explore diferentes dimensões e ambientes.
+                    Explore as três dimensões de Minecraft e descubra
+                    ambientes, criaturas e desafios diferentes.
                 </p>
 
             </div>
 
-            <div class="minecraft-texto">
+            <div class="minecraft-dimensoes">
 
-                <p>
-                    O Overworld é a dimensão principal, formada por florestas,
-                    montanhas, oceanos, desertos e diversos biomas.
-                </p>
+                <!-- OVERWORLD -->
+                <article class="minecraft-dimensao-card">
 
-                <p>
-                    O Nether é uma dimensão perigosa, com ambientes únicos
-                    e recursos próprios. Já o End é uma dimensão misteriosa,
-                    conhecida por abrigar o Ender Dragon.
-                </p>
+                    <div class="minecraft-dimensao-imagem">
+                        <img src="../assets/images/minecraft/overworld.jpg" alt="Paisagem da dimensão Overworld"
+                            loading="lazy">
+                    </div>
+
+                    <div class="minecraft-dimensao-conteudo">
+                        <h3>Overworld</h3>
+
+                        <p>
+                            É a dimensão principal de Minecraft.
+                            Possui diversos biomas, como florestas,
+                            montanhas, desertos, oceanos e planícies,
+                            oferecendo inúmeras possibilidades de exploração.
+                        </p>
+                    </div>
+
+                </article>
+
+                <!-- NETHER -->
+                <article class="minecraft-dimensao-card">
+
+                    <div class="minecraft-dimensao-imagem">
+                        <img src="../assets/images/minecraft/nether.jpg" alt="Paisagem da dimensão Nether"
+                            loading="lazy">
+                    </div>
+
+                    <div class="minecraft-dimensao-conteudo">
+                        <h3>Nether</h3>
+
+                        <p>
+                            Uma dimensão perigosa, caracterizada por
+                            ambientes vulcânicos, grandes cavernas e
+                            criaturas próprias. Também possui recursos
+                            importantes para a progressão do jogador.
+                        </p>
+                    </div>
+
+                </article>
+
+                <!-- END -->
+                <article class="minecraft-dimensao-card">
+
+                    <div class="minecraft-dimensao-imagem">
+                        <img src="../assets/images/minecraft/end.jpg" alt="Paisagem da dimensão End" loading="lazy">
+                    </div>
+
+                    <div class="minecraft-dimensao-conteudo">
+                        <h3>End</h3>
+
+                        <p>
+                            Uma dimensão misteriosa formada por ilhas
+                            flutuantes. É conhecida por abrigar o
+                            Ender Dragon, um dos principais desafios
+                            da jornada em Minecraft.
+                        </p>
+                    </div>
+
+                </article>
 
             </div>
 
         </section>
+
+
 
 
         <!-- CURIOSIDADES -->
@@ -344,25 +423,69 @@
 
                 <h2>Curiosidades</h2>
 
+                <p>
+                    Descubra detalhes interessantes sobre a criação,
+                    as mecânicas e o universo de Minecraft.
+                </p>
+
             </div>
 
-            <div class="minecraft-texto">
+            <div class="minecraft-curiosidades">
 
-                <p>
-                    Minecraft permite que os jogadores criem mecanismos
-                    utilizando redstone, um recurso que funciona de maneira
-                    semelhante a circuitos elétricos.
-                </p>
+                <article class="minecraft-curiosidade-card">
+                    <span class="minecraft-curiosidade-numero">01</span>
+                    <h3>A origem do Creeper</h3>
+                    <p>
+                        O Creeper surgiu de um erro durante o desenvolvimento
+                        de um modelo de porco. A aparência inesperada acabou
+                        inspirando uma das criaturas mais reconhecidas do jogo.
+                    </p>
+                </article>
 
-                <p>
-                    O jogo também possui diferentes modos, como Sobrevivência,
-                    Criativo, Aventura e Espectador, cada um oferecendo
-                    experiências distintas.
-                </p>
+                <article class="minecraft-curiosidade-card">
+                    <span class="minecraft-curiosidade-numero">02</span>
+                    <h3>Redstone e circuitos</h3>
+                    <p>
+                        A redstone permite criar mecanismos, sistemas
+                        automáticos e circuitos dentro do jogo, possibilitando
+                        construções que funcionam de maneira lógica.
+                    </p>
+                </article>
+
+                <article class="minecraft-curiosidade-card">
+                    <span class="minecraft-curiosidade-numero">03</span>
+                    <h3>Diferentes modos de jogo</h3>
+                    <p>
+                        Minecraft possui modos como Sobrevivência,
+                        Criativo, Aventura e Espectador. Cada um oferece
+                        diferentes formas de explorar e aproveitar o mundo.
+                    </p>
+                </article>
+
+                <article class="minecraft-curiosidade-card">
+                    <span class="minecraft-curiosidade-numero">04</span>
+                    <h3>Um mundo gerado por algoritmos</h3>
+                    <p>
+                        Os ambientes são gerados proceduralmente,
+                        criando terrenos, biomas, estruturas e paisagens
+                        diferentes durante a exploração.
+                    </p>
+                </article>
+
+                <article class="minecraft-curiosidade-card">
+                    <span class="minecraft-curiosidade-numero">05</span>
+                    <h3>Música marcante</h3>
+                    <p>
+                        A trilha sonora original, composta por C418,
+                        ajudou a construir a identidade de Minecraft,
+                        com músicas ambientes que acompanham a exploração.
+                    </p>
+                </article>
 
             </div>
 
         </section>
+
 
 
         <!-- LEGADO -->
@@ -395,6 +518,7 @@
         </section>
 
 
+
         <!-- REFERÊNCIAS -->
         <section class="minecraft-secao" id="referencias">
 
@@ -404,68 +528,93 @@
 
                 <h2>Referências</h2>
 
+                <p>
+                    Consulte as fontes utilizadas na construção
+                    deste conteúdo.
+                </p>
+
             </div>
 
-            <div class="minecraft-texto">
+            <div class="minecraft-referencias">
 
-                <p>
-                    Informações sobre o jogo:
+                <article class="minecraft-referencia-card">
+                    <h3>Minecraft — Site oficial</h3>
+                    <p>
+                        Informações sobre o jogo, atualizações,
+                        funcionalidades e universo de Minecraft.
+                    </p>
+                    <a href="https://www.minecraft.net/pt-br" target="_blank" rel="noopener noreferrer">
+                        Acessar site oficial
+                    </a>
+                </article>
 
-                    <a
-                        href="https://www.minecraft.net/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Site oficial de Minecraft
-                    </a>.
-                </p>
+                <article class="minecraft-referencia-card">
+                    <h3>Minecraft Wiki</h3>
+                    <p>
+                        Material complementar sobre dimensões,
+                        criaturas, mecânicas e características do jogo.
+                    </p>
+                    <a href="https://minecraft.wiki/" target="_blank" rel="noopener noreferrer">
+                        Consultar enciclopédia
+                    </a>
+                </article>
 
-                <p>
-                    Projeto acadêmico — Além do Jogo.
-                </p>
+                <article class="minecraft-referencia-card">
+                    <h3>Minecraft Education</h3>
+                    <p>
+                        Informações sobre possibilidades educacionais,
+                        criatividade e aprendizagem utilizando Minecraft.
+                    </p>
+                    <a href="https://education.minecraft.net/" target="_blank" rel="noopener noreferrer">
+                        Acessar Minecraft Education
+                    </a>
+                </article>
+
+                <article class="minecraft-referencia-card">
+                    <h3>Créditos das imagens</h3>
+                    <p>
+                        Imagens utilizadas nas seções de personagens,
+                        criaturas e dimensões. Consulte as fontes
+                        originais de cada arquivo.
+                    </p>
+                </article>
 
             </div>
 
         </section>
 
+
     </main>
 
 
     <!-- RODAPÉ -->
-    <footer class="minecraft-rodape">
+    <footer class="rodape">
+    <div class="rodape-conteudo">
 
-        <div class="rodape-conteudo">
-
-            <div>
-
-                <h2>ALÉM DO JOGO<span>.</span></h2>
-
-                <p>
-                    Explorando histórias, curiosidades e segredos
-                    do universo dos videogames.
-                </p>
-
-            </div>
-
-            <div>
-
-                <h3>Navegação</h3>
-
-                <a href="../index.html">Início</a>
-                <a href="#apresentacao">Voltar ao topo</a>
-
-            </div>
-
+        <div class="rodape-marca">
+            <h2>ALÉM DO JOGO<span>.</span></h2>
+            <p>
+                Explorando histórias, curiosidades e segredos
+                do universo dos videogames.
+            </p>
         </div>
 
-        <div class="rodape-final">
-
-            <p>Projeto acadêmico — Além do Jogo.</p>
-            <p>© 2026 Além do Jogo. Todos os direitos reservados.</p>
-
+        <div class="rodape-links">
+            <h3>Navegação</h3>
+            <a href="../index.html">Início</a>
+            <a href="#apresentacao">Voltar ao topo</a>
+            <a href="#legado">Legado</a>
+            <a href="#referencias">Referências</a>
         </div>
 
-    </footer>
+    </div>
+
+    <div class="rodape-final">
+        <p>Projeto acadêmico — Além do Jogo.</p>
+        <p>© 2026 Além do Jogo. Todos os direitos reservados.</p>
+    </div>
+</footer>
 
 </body>
+
 </html>

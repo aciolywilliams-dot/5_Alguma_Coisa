@@ -267,3 +267,250 @@ html {
     }
 
 }
+
+
+/* PERSONAGENS E CRIATURAS */
+
+.minecraft-personagens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.minecraft-personagem-card {
+    overflow: hidden;
+    background-color: #161F33;
+    border: 1px solid #27334A;
+    border-radius: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.minecraft-personagem-card:hover {
+    transform: translateY(-6px);
+    border-color: #39F5A5;
+}
+
+.minecraft-personagem-imagem {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: #0B1020;
+}
+
+.minecraft-personagem-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.minecraft-personagem-card:hover .minecraft-personagem-imagem img {
+    transform: scale(1.05);
+}
+
+.minecraft-personagem-conteudo {
+    padding: 25px;
+}
+
+.minecraft-personagem-conteudo h3 {
+    color: #39F5A5;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.minecraft-personagem-conteudo p {
+    color: #8995A8;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+    .minecraft-personagens {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* DIMENSÕES DO MINECRAFT */
+
+.minecraft-dimensoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.minecraft-dimensao-card {
+    overflow: hidden;
+    background-color: #161F33;
+    border: 1px solid #27334A;
+    border-radius: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.minecraft-dimensao-card:hover {
+    transform: translateY(-6px);
+    border-color: #39F5A5;
+}
+
+.minecraft-dimensao-imagem {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: #0B1020;
+}
+
+.minecraft-dimensao-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.minecraft-dimensao-card:hover .minecraft-dimensao-imagem img {
+    transform: scale(1.05);
+}
+
+.minecraft-dimensao-conteudo {
+    padding: 22px;
+}
+
+.minecraft-dimensao-conteudo h3 {
+    color: #39F5A5;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.minecraft-dimensao-conteudo p {
+    color: #8995A8;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+    .minecraft-dimensoes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .minecraft-dimensoes {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* CURIOSIDADES */
+
+.minecraft-curiosidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.minecraft-curiosidade-card {
+    position: relative;
+    background-color: #161F33;
+    border: 1px solid #27334A;
+    border-radius: 12px;
+    padding: 28px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.minecraft-curiosidade-card:hover {
+    transform: translateY(-6px);
+    border-color: #39F5A5;
+}
+
+.minecraft-curiosidade-numero {
+    display: block;
+    color: #39F5A5;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.minecraft-curiosidade-card h3 {
+    color: #F1F5F9;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.minecraft-curiosidade-card p {
+    color: #8995A8;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+    .minecraft-curiosidades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .minecraft-curiosidades {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* REFERÊNCIAS */
+
+.minecraft-referencias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.minecraft-referencia-card {
+    background-color: #161F33;
+    border: 1px solid #27334A;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.minecraft-referencia-card:hover {
+    transform: translateY(-5px);
+    border-color: #39F5A5;
+}
+
+.minecraft-referencia-card h3 {
+    color: #39F5A5;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.minecraft-referencia-card p {
+    color: #8995A8;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.minecraft-referencia-card a {
+    color: #39F5A5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.minecraft-referencia-card a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .minecraft-referencias {
+        grid-template-columns: 1fr;
+    }
+}

@@ -267,3 +267,244 @@ html {
     }
 
 }
+
+
+/* CURIOSIDADES */
+
+.gtavi-curiosidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.gtavi-curiosidade-card {
+    position: relative;
+    background-color: #161F33;
+    border: 1px solid #27334A;
+    border-radius: 12px;
+    padding: 28px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.gtavi-curiosidade-card:hover {
+    transform: translateY(-6px);
+    border-color: #39F5A5;
+}
+
+.gtavi-curiosidade-numero {
+    display: block;
+    color: #39F5A5;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.gtavi-curiosidade-card h3 {
+    color: #F1F5F9;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.gtavi-curiosidade-card p {
+    color: #8995A8;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+    .gtavi-curiosidades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .gtavi-curiosidades {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* PERSONAGENS */
+
+.gtavi-personagens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.gtavi-personagem-card {
+    overflow: hidden;
+    background-color: #161F33;
+    border: 1px solid #27334A;
+    border-radius: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.gtavi-personagem-card:hover {
+    transform: translateY(-6px);
+    border-color: #39F5A5;
+}
+
+.gtavi-personagem-imagem {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: #0B1020;
+}
+
+.gtavi-personagem-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+.gtavi-personagem-card:hover .gtavi-personagem-imagem img {
+    transform: scale(1.05);
+}
+
+.gtavi-personagem-conteudo {
+    padding: 25px;
+}
+
+.gtavi-personagem-conteudo h3 {
+    color: #39F5A5;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.gtavi-personagem-conteudo p {
+    color: #8995A8;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+
+/* REFERÊNCIAS */
+
+.gtavi-referencias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.gtavi-referencia-card {
+    background-color: #161F33;
+    border: 1px solid #27334A;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.gtavi-referencia-card:hover {
+    transform: translateY(-5px);
+    border-color: #39F5A5;
+}
+
+.gtavi-referencia-card h3 {
+    color: #39F5A5;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.gtavi-referencia-card p {
+    color: #8995A8;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.gtavi-referencia-card a {
+    color: #39F5A5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.gtavi-referencia-card a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* RESPONSIVIDADE DOS NOVOS CARDS */
+
+@media (max-width: 600px) {
+
+    .gtavi-personagens,
+    .gtavi-referencias {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+/* REGIÕES DE LEONIDA */
+
+.gtavi-regioes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.gtavi-regiao-card {
+    overflow: hidden;
+    background-color: #161F33;
+    border: 1px solid #27334A;
+    border-radius: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.gtavi-regiao-card:hover {
+    transform: translateY(-6px);
+    border-color: #39F5A5;
+}
+
+.gtavi-regiao-imagem {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: #0B1020;
+}
+
+.gtavi-regiao-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gtavi-regiao-card:hover .gtavi-regiao-imagem img {
+    transform: scale(1.05);
+}
+
+.gtavi-regiao-conteudo {
+    padding: 25px;
+}
+
+.gtavi-regiao-conteudo h3 {
+    color: #39F5A5;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.gtavi-regiao-conteudo p {
+    color: #8995A8;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+    .gtavi-regioes {
+        grid-template-columns: 1fr;
+    }
+}
