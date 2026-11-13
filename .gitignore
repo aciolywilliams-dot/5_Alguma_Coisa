@@ -1,0 +1,25 @@
+
+# Sistema operacional
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Visual Studio Code - configurações locais
+.vscode/
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.log
+
+# Arquivos de backup
+*.bak
+*.old
+*~
+
+# Dependências
+node_modules/
+
+# Arquivos de build
+dist/
+build/
